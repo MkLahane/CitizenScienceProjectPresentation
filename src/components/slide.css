@@ -1,0 +1,14 @@
+
+
+.active-slide {
+    z-index: 1000;
+    opacity: 1.0;
+    transform: translateX(calc(100% * var(--offset))) scale(1.0) rotateY(0deg);
+}
+
+.inactive-slide {
+    z-index: 1000;
+    opacity: 0.4;
+    transform: translateX(calc(100% * var(--offset))) scale(0.5) rotateY(100deg);
+    /* rotateY(calc(-45deg * var(--rotDir))) */
+}

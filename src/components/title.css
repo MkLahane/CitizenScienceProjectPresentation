@@ -1,0 +1,19 @@
+.title {
+    color: #fff;
+    font-size: 10rem;
+    text-shadow: 5px 5px 0px #FF4545;
+    opacity: 0.0;
+    animation: fade-in linear 1s forwards;
+    display: block;
+}
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
