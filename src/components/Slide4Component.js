@@ -54,8 +54,8 @@ const Slide4Component = () => {
         boxShadow: '5px 5px 0px #fff'
     };
     const imgStyle = {
-        width: '200px',
-        height: '200px',
+        width: 'calc(var(--slide-w) * 0.2)',
+        height: 'calc(var(--slide-h) * 0.2)',
         boxShadow: '5px 5px 0px #FF4545'
     };
 
@@ -64,12 +64,10 @@ const Slide4Component = () => {
     };
 
     return (
-        <>
+        <div className='slide4-div'>
             <Title titleText="Types of Land Impact" slideIndex={3} style={{
-                fontSize: '5rem',
                 textAlign: 'center',
-                textShadow: '4px 4px 0px #FF4545',
-                marginTop: '-50px'
+                marginTop: '-30px'
             }} />
             <div style={{
                 display: 'flex',
@@ -83,7 +81,7 @@ const Slide4Component = () => {
                     flexDirection: 'column',
                     width: '40%',
                     height: 'calc(var(--slide-h) * 0.7)',
-                    marginTop: '50px',
+                    marginTop: '30px',
                     justifyContent: 'space-around'
                 }}>
                     <button onClick={() => setLandImpact('sea-level-rise')} style={
@@ -103,25 +101,24 @@ const Slide4Component = () => {
                 <div style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    marginTop: '50px',
+                    marginTop: '30px',
                     width: '50%',
-                    height: 'calc(var(--slide-h) * 0.7)'
+                    justifyContent: 'center',
+                    minHeight: 'calc(var(--slide-h) * 0.1)'
                 }}>
                     <div style={{
                         display: 'grid',
                         width: '60%',
                         height: '50%',
                         gridTemplateColumns: '1fr 1fr',
-                        gap: '10px',
-                        marginBottom: '50px'
+                        gap: '10px'
                     }}>
-                        <img className='type-img' style={imgStyle} src={slide4Data[landImpact]['imgs'][0]} />
-                        <img className='type-img' style={imgStyle} src={slide4Data[landImpact]['imgs'][1]} />
+                        <img className='type-img' alt='' style={imgStyle} src={slide4Data[landImpact]['imgs'][0]} />
+                        <img className='type-img' alt='' style={imgStyle} src={slide4Data[landImpact]['imgs'][1]} />
                     </div>
-                    <div >
+                    <div className='button-para'>
                         <Para paraText={slide4Data[landImpact]['para']}
                             style={{
-                                fontSize: '1.2rem',
                                 marginTop: '-50px',
                                 opacity: 0.0,
                                 transform: 'translateY(100%)',
@@ -132,7 +129,7 @@ const Slide4Component = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

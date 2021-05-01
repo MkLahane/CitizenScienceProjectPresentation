@@ -4,6 +4,7 @@
     height: calc(var(--slide-h) * 0.65);
     display: flex;
     justify-content: space-between;
+    
 }
 
 
@@ -15,21 +16,62 @@
 }
 
 .contribution-div img {
-    box-shadow: 5px 5px 0px #fff;
+    box-shadow: 5px 5px 0px #FF4545;
 }
 
 .present-imgs {
-    transform-origin: right;
-    transform: rotate(45deg) translate(-100%);
+    transform-origin: center;
+    transform: translateY(100%);
     opacity: 0;
-    animation: contribution_img_fade_in ease-out 1s forwards;
+    animation: img_fade_in ease-out 1s forwards;
 }
 
 .not-present-imgs {
-    transform-origin: right;
-    transform: rotate(45deg) translate(100%);
+    transform-origin: center;
+    transform: translateY(100%);
     opacity: 0;
-    animation: contribution_img_fade_in ease-out 1s forwards;
+    animation: img_fade_in ease-out 1s forwards;
+}
+
+@keyframes img_fade_in {
+    0% {
+        opacity: 0.0;
+        transform: translateY(-100%);
+    } 
+    60% {
+        opacity: 0.0;
+        transform: translateY(-100%);
+    }
+    70% {
+        opacity: 1.0;
+        transform: translateY(50%) rotate(10deg);
+    }
+    80% {
+        opacity: 1.0;
+        transform: translateY(50%) rotate(-10deg);
+    }
+    100% {
+        opacity: 1.0;
+        transform: translateY(0%) rotate(0deg);
+    }
+}
+
+
+.slide7-div .title {
+  font-size: 5rem;
+  text-shadow: 3px 3px 0px #FF4545;
+}
+
+@media only screen and (max-width: 1450px) {
+  .slide7-div .title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .slide7-div .title {
+    font-size: 3rem;
+  }
 }
 
 @keyframes fadeInh2 {

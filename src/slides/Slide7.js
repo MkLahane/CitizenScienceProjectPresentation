@@ -19,16 +19,19 @@ const notPresentImgs = getImgs('sea-level-rise/not_present/');
 
 const slide7 = (
     <Slide key={6} slideIndex={6}>
-        <Title titleText="My contribution" slideIndex={5} style={{
-            fontSize: '5rem',
-            textAlign: 'center',
-            textShadow: '4px 4px 0px #FF4545',
-            marginTop: '-50px',
-            marginBottom: '30px'
-        }} />
+        <div className='slide7-div'>
+            <Title titleText="My contribution" slideIndex={6} style={{
+                textAlign: 'center',
+                position: 'absolute',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                marginTop: '-50px',
+            }} />
+        </div>
         <div style={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            marginTop: '50px'
         }}>
             <div style={{
                 display: 'flex',
@@ -61,10 +64,10 @@ const slide7 = (
                 <div className='contribution-div'>
                     {
                         presentImgs.map((imgSrc, i) =>
-                            <img key={i} src={imgSrc} className='present-imgs' style={{
-                                width: 'calc(var(--slide-w) * 0.35)',
-                                height: 'calc(var(--slide-h) * 0.45)',
+                            <img alt='' key={i} src={imgSrc} className='present-imgs' style={{
                                 gridArea: '1 / -1',
+                                width: 'calc(var(--slide-w) * 0.35)',
+                                height: 'calc(var(--slide-w) * 0.35)',
                                 animationDelay: `${(i + 1) + 0.5}s`
                             }} />
                         )
@@ -73,10 +76,10 @@ const slide7 = (
                 <div className='contribution-div'>
                     {
                         notPresentImgs.map((imgSrc, i) =>
-                            <img key={i} src={imgSrc} className='not-present-imgs' style={{
-                                width: 'calc(var(--slide-w) * 0.35)',
-                                height: 'calc(var(--slide-h) * 0.45)',
+                            <img alt='' key={i} src={imgSrc} className='not-present-imgs' style={{
                                 gridArea: '1 / -1',
+                                width: 'calc(var(--slide-w) * 0.35)',
+                                height: 'calc(var(--slide-w) * 0.35)',
                                 animationDelay: `${(i + 1) + 0.5 + 12}s`
                             }} />
                         )

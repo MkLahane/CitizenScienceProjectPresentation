@@ -1,0 +1,23 @@
+.slide15-div .title {
+    font-size: 3rem;
+    text-shadow: 3px 3px 0px #FF4545;
+}
+
+.slide15-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.slide15-div a {
+    display: block;
+    margin-top: 10px;
+    transform: translateY(-100%);
+    opacity: 0.0;
+    color: #FFD2D2;
+    font-size: 1.5rem;
+    text-decoration: underline #FF4545;
+    animation: subtitle_fade_in 1s ease-in-out forwards;
+   
+}

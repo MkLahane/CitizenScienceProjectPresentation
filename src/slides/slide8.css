@@ -1,0 +1,10 @@
+.slide8-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide8-div .title {
+    font-size: 5rem;
+}

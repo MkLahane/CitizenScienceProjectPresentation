@@ -1,0 +1,19 @@
+.slide5-div .title {
+  font-size: 5rem;
+  text-shadow: 3px 3px 0px #FF4545;
+}
+
+@media only screen and (max-width: 1200px) {
+  .slide5-div .title {
+    font-size: 4rem;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .slide5-div .title {
+    font-size: 2rem;
+    text-shadow: 2px 2px 0px #FF4545;
+  }
+  
+}

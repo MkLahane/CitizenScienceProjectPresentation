@@ -7,6 +7,13 @@ import Slide6 from './Slide6';
 import Slide7 from './Slide7';
 import Slide8 from './Slide8';
 import Slide9 from './Slide9';
+import Slide10 from './Slide10';
+import Slide11 from './Slide11';
+import Slide12 from './Slide12';
+import Slide13 from './Slide13';
+import Slide14 from './Slide14';
+import Slide15 from './Slide15';
+
 export {
     Slide1,
     Slide2,
@@ -16,5 +23,11 @@ export {
     Slide6,
     Slide7,
     Slide8,
-    Slide9
+    Slide9,
+    Slide10,
+    Slide11,
+    Slide12,
+    Slide13,
+    Slide14,
+    Slide15
 };

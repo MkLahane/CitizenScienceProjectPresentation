@@ -4,7 +4,24 @@
     z-index: 1000;
     opacity: 1.0;
     transform: translateX(calc(100% * var(--offset))) scale(1.0) rotateY(0deg);
+    overflow-y: scroll;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #212121;
+    border-radius: 20px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #FF4545;
+   
+}
+
 
 .inactive-slide {
     z-index: 1000;

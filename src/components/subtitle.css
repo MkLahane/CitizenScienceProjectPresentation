@@ -1,11 +1,13 @@
 .subtitle {
-    color: #212121;
     color: #fff;
     opacity: 0.0;
     animation: fade-in linear 1s forwards;
     background: #FF4545;
     padding: 10px;
+    font-size: calc(var(--slide-w) * 0.04);
 }
+
+
 
 
 @keyframes fade-in {

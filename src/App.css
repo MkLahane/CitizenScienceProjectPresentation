@@ -9,6 +9,7 @@
 
 .App {
   background: #121111;
+  background: red; 
   height: 100vh;
   width: 100%; 
   align-items: center;
@@ -18,10 +19,38 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  --slide-w: 60vw;
-  --slide-h: 70vh;
+  --slide-w: 1000px;
+  --slide-h: 800px;
   position: relative;
 } 
+
+@media only screen and (max-width: 1450px) {
+  .App {
+    --slide-w: 800px;
+    --slide-h: 700px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+    --slide-w: 600px;
+    --slide-h: 700px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .App {
+    --slide-w: 600px;
+    --slide-h: 700px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    --slide-w: 400px;
+    --slide-h: 700px;
+  }
+}
 
 .slides {
   width: 70%;
@@ -40,7 +69,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -50,15 +79,19 @@
 }
 
 .slide-buttons button {
-  font-size: 8rem;
-  width: 1em;
-  height: 1em;
+  font-size: calc(var(--slide-w) * 0.3);
   background: #232222;
   outline: none;
   border: 4px dashed #fff; 
   color: #FFD2D2;
   font-family: 'Patrick Hand';
   position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 3em;
+  }
 }
 
 .slide-buttons button:nth-child(1) {

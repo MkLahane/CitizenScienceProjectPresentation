@@ -1,3 +1,37 @@
+.slide6-div .title {
+  font-size: 5rem;
+  text-shadow: 3px 3px 0px #FF4545;
+}
+
+.slide6-div ul li {
+  transform: translateY(-100%); 
+  font-size: 1.8rem;
+  opacity: 0.0;
+  animation: subtitle_fade_in 1s ease-in-out forwards;
+  background: none,
+}
+
+
+
+
+.slide9-div .title {
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .slide6-div .title {
+    font-size: 4rem;
+  }
+  .slide9-div .title {
+    font-size: 3rem; 
+  }
+  .slide6-div ul li {
+    font-size: 1.2rem;
+  }
+}
+
+
+
 @keyframes subtitle_fade_in {
     0% {
         opacity: 0.0;
